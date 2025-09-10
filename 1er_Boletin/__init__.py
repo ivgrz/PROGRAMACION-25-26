@@ -15,6 +15,7 @@ suma = unaVariable + otraVariable
 
 print ("La suma es: " + str(suma))
 
+#Suma de variables decimales
 
 suma2 = vard2 + variabled
 
