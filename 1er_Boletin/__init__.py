@@ -20,6 +20,7 @@ print ("La suma es: " + str(suma))
 suma2 = vard2 + variabled
 
 print ("La suma de los decimales es: " + str(suma2))
+#resta cosas
 
 resta = variabled - vard2
 
