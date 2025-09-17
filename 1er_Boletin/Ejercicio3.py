@@ -13,9 +13,14 @@ def potencia_depuracion(base, exponente):
             print(f"Vuelta {i + 1}: x = {x}")  # Depuración: mostrar el valor de x en cada iteración (vuelta)
         print(f"Valor final de x después del ciclo: {x}")  # Depuración: mostrar el valor final de x
         return x
-def num_cuadrados(n):
-    for i in range(1, n+1):
-        print(f"Número: {i}, Cuadrado: {i**2}")
+def num_cuadrados(base):
+    x = 1.0
+    for i in range(2):
+        x *= base
+        print(f"Vuelta {i + 1}: x = {x}")  # Depuración: mostrar el valor de x en cada iteración (vuelta)
+    print(f"{base} ^ 2 = {x}")  # Depuración: mostrar el valor final de x
+    return round(x, 3)
+
 
 # ----MENU PRINCIPAL ----
 
@@ -29,11 +34,11 @@ def menu():
     opcion = input("Elige una opcion:")
 
     if opcion == "1":
-        base = int(input("Ingresa la base:"))
+        base = float(input("Ingresa la base:"))
         exponente = int(input("Ingresa el exponente:"))
-        print(f"Resultado: {potencia_depuracion(base, exponente)}")
+        print(f"Resultado:", round(potencia_depuracion(base, exponente), 3))
     elif opcion == "2":
-        n = int(input("ingresa un numero"))
+        n = float(input("ingresa un numero: "))
         num_cuadrados(n)
     elif opcion == "3":
         print("Saliendo del programa...")
