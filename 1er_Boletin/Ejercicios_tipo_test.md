@@ -34,3 +34,10 @@ e)(not(true and false)) == false --> (not false) == false --> True == false --> 
 
 f) "12" + "12" == "24" --> False --> "1212"
 g) "34"+"43" == "3443" --> True --> "3443"
+
+# Ejercicio 5 Boletin 1
+
+![5to.png](../imagenes/5to.png)
+
+a) 1 + 1 < = 0 - 3 and 1 >= 2 --> 2 <= -3 and 1 >= 2 --> False
+b) 

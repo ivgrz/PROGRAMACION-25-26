@@ -61,6 +61,3 @@ print("Resultado f):", resultado_f)
 resultado_g = (n * (1 + i)**t * i) / ((1 + i)**t - 1)
 print("Resultado g):", resultado_g)
 
-'''
-
-'''
