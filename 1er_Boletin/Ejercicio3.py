@@ -9,15 +9,15 @@ def potencia_depuracion(base, exponente):
         x = 1
 
         for i in range(exponente):
-            x = x * base
-            print(f"Vuelta {i + 1}: x = {x}")  # Depuración: mostrar el valor de x en cada iteración (vuelta)
-        print(f"Valor final de x después del ciclo: {x}")  # Depuración: mostrar el valor final de x
+            x *= base
+            print(f"{base} ^ {i + 1} = {x}")  # Depuración: mostrar el valor de x en cada iteración (vuelta)
+        print(f"Valor final: {x}")  # Depuración: mostrar el valor final de x
         return x
 def num_cuadrados(base):
     x = 1.0
     for i in range(2):
         x *= base
-        print(f"Vuelta {i + 1}: x = {x}")  # Depuración: mostrar el valor de x en cada iteración (vuelta)
+        print(f"Vuelta {i + 1}: {base} ^ 2 = {x}")  # Depuración: mostrar el valor de x en cada iteración (vuelta)
     print(f"{base} ^ 2 = {x}")  # Depuración: mostrar el valor final de x
     return round(x, 3)
 
