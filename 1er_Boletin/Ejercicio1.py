@@ -15,5 +15,4 @@ def potencia():
  print("Es todo por ahora")
 
 
-if __name__ == "__main__":
-    potencia()
+potencia()

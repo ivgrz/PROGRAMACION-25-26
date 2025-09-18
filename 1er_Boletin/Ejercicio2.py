@@ -22,3 +22,5 @@ print("Prueba con (3,3):",potencia_depuracion(3,3))
 
 print("Prueba con (5,3):",potencia_depuracion(5,3))
 
+
+
