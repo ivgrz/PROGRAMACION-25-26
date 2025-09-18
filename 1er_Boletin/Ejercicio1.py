@@ -13,5 +13,7 @@ def potencia():
      resultado = n1 ** n2
      print(f"La potencia de {n1} elevado a {n2} es: {resultado}")
  print("Es todo por ahora")
-potencia()
 
+
+if __name__ == "__main__":
+    potencia()
