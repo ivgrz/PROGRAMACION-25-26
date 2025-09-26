@@ -24,16 +24,16 @@ def menu():
         if opcion == 1:
             lado = float(input("Dame la medida del lado: "))
             s_cuad = lado ** 2
-            print(f"La superficie de su cuadrado es de {s_cuad} m^2")
+            print(f"La superficie de su cuadrado es de {s_cuad:3.f} m^2")
         elif opcion == 2:
             base = float(input(f"Dame la medida de la base: "))
             altura = float(input(f"Que altura tiene? "))
             s_t = (float(base) * float(altura))/2
-            print(f"La superficie de su triangulo es: {s_t}")
+            print(f"La superficie de su triangulo es: {s_t:3.f}")
         elif opcion == 3:
             radio = float(input(f"Dame la medida del radio: "))
             s_circ = math.pi * (radio ** 2)
-            print(f"La superficie del circulo es {s_circ}")
+            print(f"La superficie del circulo es {s_circ:3.f}")
 
 
 menu()
