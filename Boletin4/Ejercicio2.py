@@ -29,11 +29,11 @@ def menu():
             base = float(input(f"Dame la medida de la base: "))
             altura = float(input(f"Que altura tiene? "))
             s_t = (float(base) * float(altura))/2
-            print(f"La superficie de su triangulo es: {s_t:3.f}")
+            print(f"La superficie de su triangulo es: {s_t:3.f} m^2")
         elif opcion == 3:
             radio = float(input(f"Dame la medida del radio: "))
             s_circ = math.pi * (radio ** 2)
-            print(f"La superficie del circulo es {s_circ:3.f}")
+            print(f"La superficie del circulo es {s_circ:3.f} m^2")
 
 
 menu()
