@@ -14,7 +14,7 @@ def num_pares():
     inicio = min(num1, num2)
     fin = max(num1, num2)
 
-    # Generamos la lista de todos los números en el rango
+    # Generamos la lista de todos los números con el rango especificado
     numeros = list(range(inicio, fin + 1))
     # Filtramos solo los números pares
     pares = []
