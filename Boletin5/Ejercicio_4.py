@@ -1,21 +1,28 @@
 """
-Escribir un programa que imprima tódolos números pares entre dous números que se
-lle pidan o usuario
+Escribir un programa que imprima todos los números pares entre dos números que se
+le pidan al usuario
 """
-import sys
-
 
 def num_pares():
-    lista = []
-    print(f"Introduce 10 numeros")
+    # Pedimos dos números al usuario
+    print("Introduce el primer número:")
+    num1 = int(input("> "))
+    print("Introduce el segundo número:")
+    num2 = int(input("> "))
 
-    for i in range(10):
-        num = int(input("> "))
-        lista.append(num)
+    # Determinamos el menor y el mayor para recorrer correctamente el rango
+    inicio = min(num1, num2)
+    fin = max(num1, num2)
 
-    pares = [num for num in lista if num % 2 == 0]
-# num for num significa que por cada num en lista si num % 2 == 0 (es decir, si es par) lo añade a la nueva lista pares
-    pares_ordenados = sorted(pares)
-# sorted() ordena la lista de menor a mayor
-    print(f"Los numeros pares de esta lista son: {pares_ordenados}")
+    # Generamos la lista de todos los números en el rango
+    numeros = list(range(inicio, fin + 1))
+    # Filtramos solo los números pares
+    pares = []
+    for x in numeros:
+        if x % 2 == 0:
+            pares.append(x)
+
+    # Mostramos el resultado
+    print(f"Los números pares entre {inicio} y {fin} son: {pares}")
+
 num_pares()
