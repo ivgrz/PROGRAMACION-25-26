@@ -1,6 +1,4 @@
-"""
 
-"""
 def temperaturas_():
     temperatura = []
     dias = ["lunes", "martes", "miercoles", "jueves", "viernes"]
