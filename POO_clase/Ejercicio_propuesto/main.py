@@ -5,7 +5,7 @@ from Hora import Hora
 if __name__ == '__main__':
 
     hora1 = Hora(
-        11, 30, 20
+        18, 0, 0
     )
 
 

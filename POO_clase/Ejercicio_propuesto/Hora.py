@@ -34,17 +34,13 @@ class Hora:
 			acarreo_minutos = self.__segundo // 60
 			self.__segundo %= 60
 			self.__minuto += acarreo_minutos
+			self.convertir_minutos()
 	def convertir_minutos(self):
 		if self.__minuto >= 60:
 
 			acarreo_horas = self.__minuto // 60
 			self.__minuto %= 60
 			self.__hora = (self.__hora + acarreo_horas) % 24
-
-
-
-
-
 
 	def incrementar_minutos(self, minutos):
 
