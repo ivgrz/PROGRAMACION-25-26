@@ -1,0 +1,2 @@
+Esta es una nueva nota de prueba 
+Esta es una segunda nota para probar el programa de ficheros
