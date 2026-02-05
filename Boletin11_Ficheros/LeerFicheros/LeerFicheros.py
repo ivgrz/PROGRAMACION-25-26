@@ -17,7 +17,7 @@ while continuar.lower() == "si":
 
 		fichero.close()
 
-	print(f"La palabra {palabra} aparece {Contador_P} vez/veces en este txt")
+
 
 	fichero_1 = open("resumen_palabras.txt","w")
 	print("--- RESUMEN DE LAS PALABRAS REPETIDAS ----")
