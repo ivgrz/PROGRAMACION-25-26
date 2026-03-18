@@ -70,4 +70,43 @@ class energia_renovable:
                 pais = fila[10]
                 valor = float(fila[13])
                 if mejor_valor is None or valor > mejor_valor:
-                    pass
+                    mejor_valor = valor
+                    mejor_pais = pais
+        if mejor_pais:
+            print(f"País con maior produción en {ano}: {mejor_pais} ({mejor_valor:.2f}%)")
+        else:
+            print(f"Non se atoparon datos para o ano {ano}.")
+
+
+def menu():
+    er = energia_renovable()
+    datos = er.leer_csv_eurostat()
+
+    while True:
+        print("\n--- Menú Enerxía Renovable ---")
+        print("1. Produción total por país")
+        print("2. Produción dun país nun ano")
+        print("3. País con maior crecemento porcentual")
+        print("4. País con maior produción nun ano")
+        print("5. Saír")
+        opcion = input("Escolle unha opción: ").strip()
+
+        if opcion == "1":
+            er.total_por_pais(datos)
+        elif opcion == "2":
+            pais = input("Introduce o país: ").strip()
+            ano = input("Introduce o ano: ").strip()
+            er.produccion_pais_ano(datos, pais, ano)
+        elif opcion == "3":
+            er.lista_pais_crecimiento_anual(datos)
+        elif opcion == "4":
+            ano = input("Introduce o ano: ").strip()
+            er.pais_mejor_prod_ano(datos, ano)
+        elif opcion == "5":
+            break
+        else:
+            print("Opción non válida.")
+
+
+if __name__ == "__main__":
+    menu()
